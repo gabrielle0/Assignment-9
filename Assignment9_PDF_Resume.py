@@ -10,11 +10,20 @@
 	#- Search how to read JSON file
 	#- You will create the JSON file manually
 
+import json
 
-filename = input("Enter file name: ")
-lines = open(filename).read().splitlines()
+with open("Resume.json", "r") as file:
+    jsonData = json.load(file)
+print("Datatype of variable: ", type(jsonData))
+for i in jsonData:
+    print(i, jsonData[i])
 
-print (f"{lines}")
+
+
+
+	
+
+
 
 
 
