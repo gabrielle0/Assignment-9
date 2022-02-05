@@ -1,0 +1,32 @@
+
+{
+    "firstName": "Gabrielle",
+    "lastName": "Pangilinan",
+    "gender": "Female",
+    "age": 19,
+    "address": "123 ABC Street, Quezon City",
+    "Contact Information": "gabrielleapangilinan.iskolarngbayan@pup.edu.ph"
+
+    "Personal Profile:" {
+    "First year college student who is willing to work parttime to learn new skills and to gain experience."
+    },
+
+    "Skills": {
+          "- time management",
+          "- basic accounting",
+          "- basic python programming",
+          "- written communication skills"     
+    },
+
+    "Educational Attainment": {
+          "Escuela Royale de Montessori",
+          "APEC Schools, New Manila",
+          "Peniel Christian Academy",
+          "Polytechnic University of the Philippines"
+    },
+         
+    "Academic Associations and Affiliations": {
+      "Member of Amplify, APEC New Manila`s school newspaper, 2018 ",
+      "Member of Pup Sandiwa Organization 2021 - 2022"
+
+}
