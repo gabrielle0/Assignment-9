@@ -1,0 +1,40 @@
+
+{
+    "heading1": "Personal Information",
+
+    "name": "Gabrielle Pangilinan",
+    "address": "Address: 123 ABC Street, Quezon City",
+    "contact information": "Contact Information: gabrielleapangilinan.iskolarngbayan@pup.edu.ph",
+    "course": "Course: Bachelor of Science in Computer Engineering",
+
+
+    "heading2": "Profile:",
+    "profile": "First year college student who is willing to work part time to learn new skills and to gain experience.",
+
+
+    "heading3": "Skills:",
+
+    "skills": [
+          "- Time Management",
+          "- Basic Accounting",
+          "- Basic Python Programming",
+          "- Written Communication Skills"    
+    ],
+
+    "heading4": "Educational Attainment:",
+
+    "education": [
+          "- Escuela Royale de Montessori",
+          "- APEC Schools, New Manila",
+          "- Peniel Christian Academy",
+          "- Polytechnic University of the Philippines"
+    ],
+         
+    "heading5": "Academic Associations and Affiliations:",
+
+    "academic orgs": [
+      "- Member of Amplify, APEC New Manila`s school newspaper, 2018 ",
+      "- Member of Pup Sandiwa Organization 2021 - 2022"
+    ]
+
+}

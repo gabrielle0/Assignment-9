@@ -18,10 +18,6 @@ filename = input("Enter filename (ex: Resume.json): ")
 data =  open(filename)
 jsonData = json.load(data)
 
-#format for calling key and array
-print (jsonData.get("name"))
-print (jsonData.get("skills")[0])
-
 
 heading1 = jsonData.get("heading1")
 name = jsonData.get("name")
@@ -32,7 +28,7 @@ course = jsonData.get("course")
 heading2 = jsonData.get("heading2")
 profile = jsonData.get("profile")
 
-heading3 = jsonData.get("skills")
+heading3 = jsonData.get("heading3")
 skill1 = jsonData.get("skills")[0]
 skill2 = jsonData.get("skills")[1]
 skill3 = jsonData.get("skills")[2]
@@ -53,52 +49,59 @@ org2 = jsonData.get("academic orgs")[1]
 pdf = FPDF("P", "mm", "Letter")
 pdf.add_page()
 
-pdf.set_font("times", "B")
-pdf.set_font_size (15)
-pdf.cell(40, 10, f"{heading1}", ln=2)
 
-pdf.set_font("times")
-pdf.set_font_size (13)
-pdf.cell (40, 10, f"{name}", ln=1)
-pdf.cell (40, 10, f"{address}", ln=1)
-pdf.cell (40, 10, f"{contact}", ln=1)
-pdf.cell (40, 10, f"{course}", ln=3)
+pdf.set_font("helvetica", "B")
+pdf.set_font_size (14)
+pdf.cell(40, 10, f"{heading1}", ln=True)
 
-
-pdf.set_font("times", "B")
-pdf.set_font_size (15)
-pdf.cell(40, 10, f"{heading2}", ln=2)
+pdf.set_font("helvetica", "I")
+pdf.set_font_size (12)
+pdf.cell (40, 8, f"{name}", ln=True)
+pdf.cell (40, 8, f"{address}", ln=True)
+pdf.cell (40, 8, f"{contact}", ln=True)
+pdf.cell (40, 8, f"{course}", ln=True)
 
 
+pdf.set_font("helvetica", "B")
+pdf.set_font_size (14)
+pdf.cell(40, 15, f"{heading2}", ln=True)
 
+pdf.set_font("helvetica")
+pdf.set_font_size (12)
+pdf.cell(40, 8, f"{profile}", ln=True)
 
+pdf.set_font("helvetica", "B")
+pdf.set_font_size (14)
+pdf.cell(40, 15, f"{heading3}", ln=True)
 
+pdf.set_font("helvetica")
+pdf.set_font_size (12)
+pdf.cell(40, 8, f"{skill1}", ln=True)
+pdf.cell (40, 8, f"{skill2}", ln=True)
+pdf.cell (40, 8, f"{skill3}", ln=True)
+pdf.cell (40, 8, f"{skill4}", ln=True)
 
+pdf.set_font("helvetica", "B")
+pdf.set_font_size (14)
+pdf.cell(40, 15, f"{heading4}", ln=True)
 
+pdf.set_font("helvetica")
+pdf.set_font_size (12)
+pdf.cell(40, 8, f"{school1}", ln=True)
+pdf.cell (40, 8, f"{school2}", ln=True)
+pdf.cell (40, 8, f"{school3}", ln=True)
+pdf.cell (40, 8, f"{school4}", ln=True)
 
+pdf.set_font("helvetica", "B")
+pdf.set_font_size (14)
+pdf.cell(40, 15, f"{heading5}", ln=True)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pdf.set_font("helvetica")
+pdf.set_font_size (12)
+pdf.cell(40, 8, f"{org1}", ln=True)
+pdf.cell (40, 8, f"{org2}", ln=True)
 
 
 pdf.output("PANGILINAN_GABRIELLE.pdf")
+print("To get PDF, type: python [full name of document] in terminal (ex: python Assignment9_PDF_Resume.py)")
 
