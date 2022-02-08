@@ -53,7 +53,6 @@ class PDF(FPDF):
 pdf = PDF("P", "mm", "Letter")
 pdf.add_page()
 
-
 def type_personal_information ():
 	pdf.set_font("helvetica", "B")
 	pdf.set_font_size (14)
